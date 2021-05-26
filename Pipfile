@@ -12,6 +12,7 @@ djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
 django-cors-headers = "*"
+requests = "*"
 
 [dev-packages]
 

@@ -1,0 +1,10 @@
+USAGE BEFORE PROJECT LAUNCH
+***********************
+1. MIGRATE
+-> python manage.py migrate
+
+2. LOAD LINKS/ROLES DATA INTO DB AFTER MIGRATION
+-> python manage.py loaddata utils/seeders/link_seeder.json
+
+3. MAKE/DUMP DATA INTO A SEEDER JSON FILE (OPTIONAL -> JUST WHEN CREATING SEEDER FILE)
+-> python manage.py dumpdata system_administration --indent 4 > utils/seeders/link_seeder.json

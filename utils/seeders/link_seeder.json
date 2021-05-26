@@ -1,0 +1,381 @@
+[
+  {
+    "model": "system_administration.menu",
+    "pk": "05f9679f-6e91-4891-8e46-6893b18d1a40",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:51:19.046Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:32:46.992Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:32:46.992Z",
+      "deleted_by": null,
+      "displayed_name": "CPD",
+      "displayed_code": "cpd"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "1b94a2bc-38b4-4c99-9080-54d082c82d46",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:49:43.020Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T09:56:02.960Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T09:56:02.960Z",
+      "deleted_by": null,
+      "displayed_name": "Home",
+      "displayed_code": "dashboard"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "1dbf7acd-69d9-4100-8ab8-b1e124680895",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:50:49.926Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:33:18.898Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:33:18.899Z",
+      "deleted_by": null,
+      "displayed_name": "Licencing",
+      "displayed_code": "licencing"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "21dbf418-2294-4274-b94b-45fdc018f3ed",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:50:12.696Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:34:22.783Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:34:22.783Z",
+      "deleted_by": null,
+      "displayed_name": "Attachment Panel",
+      "displayed_code": "attachment_panel"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "2421c40f-020f-4a79-a0a6-86c9c05efeba",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:51:24.849Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:32:34.734Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:32:34.734Z",
+      "deleted_by": null,
+      "displayed_name": "Reports",
+      "displayed_code": "reports"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "2b1472f8-2414-4c92-ad68-aa4b8314412e",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:50:45.133Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:33:24.812Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:33:24.812Z",
+      "deleted_by": null,
+      "displayed_name": "Licence",
+      "displayed_code": "licence"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "3849baa3-bfd1-44f0-9fbd-6d45cb6dd2eb",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:50:05.936Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:34:11.399Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:34:11.399Z",
+      "deleted_by": null,
+      "displayed_name": "Work Experience",
+      "displayed_code": "work_experience"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "433eab74-2363-4f65-a476-50acb07295b5",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:49:56.328Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T09:56:16.340Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T09:56:16.340Z",
+      "deleted_by": null,
+      "displayed_name": "Personal Information",
+      "displayed_code": "personal_information"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "47f98b01-d2aa-419d-9fc8-1da39dd070a3",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:49:58.780Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:34:01.688Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:34:01.688Z",
+      "deleted_by": null,
+      "displayed_name": "Academic Qualification",
+      "displayed_code": "academic_qualification"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "498301fc-6628-4b89-8552-c0ff10eabce2",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:50:39.139Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:33:32.644Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:33:32.644Z",
+      "deleted_by": null,
+      "displayed_name": "Registration",
+      "displayed_code": "registration"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "77a06085-3d22-4a67-ae01-0053bd59356e",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:50:55.690Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:33:12.221Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:33:12.221Z",
+      "deleted_by": null,
+      "displayed_name": "Payment",
+      "displayed_code": "payment"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "8017dd67-9782-46f9-b827-74d393cd27ee",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:51:13.455Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:32:54.073Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:32:54.073Z",
+      "deleted_by": null,
+      "displayed_name": "Internship",
+      "displayed_code": "internship"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "91068f10-a140-4280-94f0-6074572ca466",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:50:34.469Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:33:39.990Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:33:39.990Z",
+      "deleted_by": null,
+      "displayed_name": "Register",
+      "displayed_code": "register"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "ae907e9f-74e4-43f5-97cf-6162a8e9c60b",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:51:02.156Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:33:05.771Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:33:05.771Z",
+      "deleted_by": null,
+      "displayed_name": "Billing",
+      "displayed_code": "billing"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "cc53feac-dc99-4ed8-b4fa-e409fd4d9ccd",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:51:31.360Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T09:55:48.197Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T09:55:48.197Z",
+      "deleted_by": null,
+      "displayed_name": "System Administration",
+      "displayed_code": "system_administration"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "df2d8483-1961-4cd0-ba11-3c9a4b096dce",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:50:19.630Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:34:37.349Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:34:37.349Z",
+      "deleted_by": null,
+      "displayed_name": "Referee Information",
+      "displayed_code": "referee_information"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "ea36e30e-ff23-4d87-b7f6-1ec189fd953e",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:50:26.501Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:33:47.768Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:33:47.768Z",
+      "deleted_by": null,
+      "displayed_name": "Declaration",
+      "displayed_code": "declaration"
+    }
+  },
+  {
+    "model": "system_administration.menu",
+    "pk": "ffb95280-7cf9-4a71-b4f8-15d82d29c508",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:51:08.152Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T11:32:59.866Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T11:32:59.866Z",
+      "deleted_by": null,
+      "displayed_name": "Examination",
+      "displayed_code": "examination"
+    }
+  },
+  {
+    "model": "system_administration.menurole",
+    "pk": "4e6dd1bb-f73f-471a-9f3f-8a849096932d",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:53:02.757Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T13:26:32.402Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T13:26:32.402Z",
+      "deleted_by": null,
+      "role": "PRACTITIONER",
+      "menu": [
+        "77a06085-3d22-4a67-ae01-0053bd59356e",
+        "21dbf418-2294-4274-b94b-45fdc018f3ed",
+        "433eab74-2363-4f65-a476-50acb07295b5"
+      ]
+    }
+  },
+  {
+    "model": "system_administration.menurole",
+    "pk": "912e4db1-9f2d-4200-b40b-9007dba9d39e",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:53:31.076Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T09:53:53.447Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T09:53:53.447Z",
+      "deleted_by": null,
+      "role": "REGISTRAR",
+      "menu": [
+        "2421c40f-020f-4a79-a0a6-86c9c05efeba",
+        "05f9679f-6e91-4891-8e46-6893b18d1a40",
+        "8017dd67-9782-46f9-b827-74d393cd27ee",
+        "ffb95280-7cf9-4a71-b4f8-15d82d29c508",
+        "77a06085-3d22-4a67-ae01-0053bd59356e",
+        "2b1472f8-2414-4c92-ad68-aa4b8314412e",
+        "91068f10-a140-4280-94f0-6074572ca466",
+        "ea36e30e-ff23-4d87-b7f6-1ec189fd953e",
+        "df2d8483-1961-4cd0-ba11-3c9a4b096dce",
+        "21dbf418-2294-4274-b94b-45fdc018f3ed",
+        "3849baa3-bfd1-44f0-9fbd-6d45cb6dd2eb",
+        "47f98b01-d2aa-419d-9fc8-1da39dd070a3",
+        "433eab74-2363-4f65-a476-50acb07295b5",
+        "1b94a2bc-38b4-4c99-9080-54d082c82d46"
+      ]
+    }
+  },
+  {
+    "model": "system_administration.menurole",
+    "pk": "b5786d47-159a-4549-9c5f-22fc83859245",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:54:57.693Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T09:54:57.693Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T09:54:57.693Z",
+      "deleted_by": null,
+      "role": "SYSTEM ADMIN",
+      "menu": [
+        "cc53feac-dc99-4ed8-b4fa-e409fd4d9ccd",
+        "2421c40f-020f-4a79-a0a6-86c9c05efeba",
+        "1b94a2bc-38b4-4c99-9080-54d082c82d46"
+      ]
+    }
+  },
+  {
+    "model": "system_administration.menurole",
+    "pk": "d4ec4c57-e544-40f4-a1f9-22f06e992cdb",
+    "fields": {
+      "active": true,
+      "created_at": "2021-04-27T09:53:47.516Z",
+      "created_by": null,
+      "updated_at": "2021-04-27T09:53:47.516Z",
+      "updated_by": null,
+      "deleted": false,
+      "deleted_at": "2021-04-27T09:53:47.516Z",
+      "deleted_by": null,
+      "role": "ACCOUNTANT",
+      "menu": [
+        "2421c40f-020f-4a79-a0a6-86c9c05efeba",
+        "ae907e9f-74e4-43f5-97cf-6162a8e9c60b",
+        "1b94a2bc-38b4-4c99-9080-54d082c82d46"
+      ]
+    }
+  }
+]

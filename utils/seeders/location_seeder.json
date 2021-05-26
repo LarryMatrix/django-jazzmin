@@ -1,0 +1,218 @@
+[
+{
+    "model": "user_management.location",
+    "pk": "314fc5bb-d85f-495d-990a-4fc60acb614d",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:12:36.712Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:12:56.567Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:12:56.567Z",
+        "deleted_by": null,
+        "location_name": "Morogoro",
+        "location_code": "",
+        "location_level": 2,
+        "location_reference": "4950afe8-80ea-4c5a-b72e-7f6359623f06"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "42c62b28-be74-453b-8e25-e4c489405023",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:13:58.905Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:13:58.905Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:13:58.905Z",
+        "deleted_by": null,
+        "location_name": "Kongwa",
+        "location_code": "",
+        "location_level": 2,
+        "location_reference": "bfe5a024-87cb-4d54-aceb-046ced01a713"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "47c5618c-0d6a-4e5d-bd63-441f2e0ba4f7",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:11:21.112Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:19:48.522Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:19:48.522Z",
+        "deleted_by": null,
+        "location_name": "Tanzania",
+        "location_code": "",
+        "location_level": 0,
+        "location_reference": "0"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "4950afe8-80ea-4c5a-b72e-7f6359623f06",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:11:53.161Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:12:19.332Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:12:19.332Z",
+        "deleted_by": null,
+        "location_name": "Morogoro",
+        "location_code": "",
+        "location_level": 1,
+        "location_reference": "47c5618c-0d6a-4e5d-bd63-441f2e0ba4f7"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "68cfd35d-affc-44e2-b169-156a8ceb5990",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:13:17.433Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:13:17.434Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:13:17.434Z",
+        "deleted_by": null,
+        "location_name": "Mpwapwa",
+        "location_code": "",
+        "location_level": 2,
+        "location_reference": "bfe5a024-87cb-4d54-aceb-046ced01a713"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "770d8286-997b-4a87-a5e8-c1c70f931658",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:12:27.957Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:12:27.957Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:12:27.957Z",
+        "deleted_by": null,
+        "location_name": "Mvomero DC",
+        "location_code": "",
+        "location_level": 2,
+        "location_reference": "4950afe8-80ea-4c5a-b72e-7f6359623f06"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "776c389e-aeac-4593-831d-a0a6befec853",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T08:50:08.653Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T08:50:08.653Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T08:50:08.653Z",
+        "deleted_by": null,
+        "location_name": "Kenya",
+        "location_code": "",
+        "location_level": 0,
+        "location_reference": "0"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "81f52701-18a0-4db0-9240-904c72e2546b",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:13:25.299Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:13:25.299Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:13:25.299Z",
+        "deleted_by": null,
+        "location_name": "Bahi",
+        "location_code": "",
+        "location_level": 2,
+        "location_reference": "bfe5a024-87cb-4d54-aceb-046ced01a713"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "8adfc32a-5776-468f-8dce-f71b240ef3f5",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:12:11.115Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:12:11.115Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:12:11.115Z",
+        "deleted_by": null,
+        "location_name": "Tanga",
+        "location_code": "",
+        "location_level": 1,
+        "location_reference": "47c5618c-0d6a-4e5d-bd63-441f2e0ba4f7"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "a8f64a55-e5ae-40e0-8fa4-2e36bf3f8097",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:12:48.262Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:12:48.262Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:12:48.262Z",
+        "deleted_by": null,
+        "location_name": "Kilosa",
+        "location_code": "",
+        "location_level": 2,
+        "location_reference": "4950afe8-80ea-4c5a-b72e-7f6359623f06"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "bfe5a024-87cb-4d54-aceb-046ced01a713",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:12:01.797Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:13:08.548Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:13:08.548Z",
+        "deleted_by": null,
+        "location_name": "Dodoma",
+        "location_code": "",
+        "location_level": 1,
+        "location_reference": "47c5618c-0d6a-4e5d-bd63-441f2e0ba4f7"
+    }
+},
+{
+    "model": "user_management.location",
+    "pk": "fd0e7e7d-ec35-4137-a182-f366b33a7b69",
+    "fields": {
+        "active": true,
+        "created_at": "2021-05-12T07:13:34.341Z",
+        "created_by": null,
+        "updated_at": "2021-05-12T07:13:34.341Z",
+        "updated_by": null,
+        "deleted": false,
+        "deleted_at": "2021-05-12T07:13:34.341Z",
+        "deleted_by": null,
+        "location_name": "Dodoma CC",
+        "location_code": "",
+        "location_level": 2,
+        "location_reference": "bfe5a024-87cb-4d54-aceb-046ced01a713"
+    }
+}
+]

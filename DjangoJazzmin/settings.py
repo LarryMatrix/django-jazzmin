@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-^--)00*%-f!*k$1kb6_k_)e+cocx=rc9bvs5v_c)31y_o7i^c-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,9 +40,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'rest_framework',
+    'rest_framework.authtoken',
+    'corsheaders',
+    'djoser',
+
+    'facility'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -86,6 +94,31 @@ DATABASES = {
 }
 
 
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:9090",
+    "http://127.0.0.1:9090",
+    "http://localhost:4400",
+    "http://127.0.0.1:4400",
+    "http://196.192.73.42:1122",
+    "http://196.192.73.42",
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'authorization',
+    'access-control-allow-origin',
+    'content-type',
+    'origin',
+    'prefer',
+    'referer',
+    'user-agent',
+    'content-disposition',
+]
+
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -123,6 +156,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "media"),
+]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -141,15 +181,83 @@ LOGGING = {
 
 
 
+DJOSER = {
+    'LOGIN_FIELD': 'email',
+    'PASSWORD_RESET_CONFIRM_URL': 'user/password/reset/confirm/{uid}/{token}',
+    'USERNAME_RESET_CONFIRM_URL': 'user/username/reset/confirm/{uid}/{token}',
+    'ACTIVATION_URL': 'user/activate/{uid}/{token}',
+    'USER_CREATE_PASSWORD_RETYPE': True,
+    'SEND_ACTIVATION_EMAIL': True,
+    'SEND_CONFIRMATION_EMAIL': True,
+    'PASSWORD_CHANGED_EMAIL_CONFIRMATION': True,
+    'USERNAME_CHANGED_EMAIL_CONFIRMATION': True,
+    'USERNAME_RESET_SHOW_EMAIL_NOT_FOUND': True,
+    'PASSWORD_RESET_SHOW_EMAIL_NOT_FOUND': True,
+    'EMAIL': {
+        'activation': 'hash.emails.ActivationEmail',
+        'confirmation': 'hash.emails.ConfirmationEmail',
+        'password_reset': 'hash.emails.PasswordResetEmail',
+        'password_changed_confirmation': 'hash.emails.PasswordChangedConfirmationEmail',
+    },
+    'SERIALIZERS': {
+        'activation': 'djoser.serializers.ActivationSerializer',
+        'password_reset': 'djoser.serializers.SendEmailResetSerializer',
+        'password_reset_confirm': 'djoser.serializers.PasswordResetConfirmSerializer',
+        'password_reset_confirm_retype': 'djoser.serializers.PasswordResetConfirmRetypeSerializer',
+        'set_password': 'djoser.serializers.SetPasswordSerializer',
+        'set_password_retype': 'djoser.serializers.SetPasswordRetypeSerializer',
+        'set_username': 'djoser.serializers.SetUsernameSerializer',
+        'set_username_retype': 'djoser.serializers.SetUsernameRetypeSerializer',
+        'username_reset': 'djoser.serializers.SendEmailResetSerializer',
+        'username_reset_confirm': 'djoser.serializers.UsernameResetConfirmSerializer',
+        'username_reset_confirm_retype': 'djoser.serializers.UsernameResetConfirmRetypeSerializer',
+        # 'user_create': 'user_management.serializers.user_serializer.UserCreateSerializer',
+        # 'user_create_password_retype': 'user_management.serializers.user_serializer.UserCreateSerializer',
+        'user_delete': 'djoser.serializers.UserDeleteSerializer',
+        # 'user': 'user_management.serializers.user_serializer.UserSerializer',
+        # 'current_user': 'user_management.serializers.user_serializer.UserSerializer',
+        'token': 'djoser.serializers.TokenSerializer',
+        'token_create': 'djoser.serializers.TokenCreateSerializer',
+    },
+    'CONSTANTS': {
+        'messages': 'djoser.constants.Messages',
+    },
+    'PERMISSIONS': {
+        'activation': ['rest_framework.permissions.AllowAny'],
+        'password_reset': ['rest_framework.permissions.AllowAny'],
+        'password_reset_confirm': ['rest_framework.permissions.AllowAny'],
+        'set_password': ['djoser.permissions.CurrentUserOrAdmin'],
+        'username_reset': ['rest_framework.permissions.AllowAny'],
+        'username_reset_confirm': ['rest_framework.permissions.AllowAny'],
+        'set_username': ['djoser.permissions.CurrentUserOrAdmin'],
+        'user_create': ['rest_framework.permissions.AllowAny'],
+        'user_delete': ['djoser.permissions.CurrentUserOrAdmin'],
+        'user': ['rest_framework.permissions.AllowAny'],
+        'user_list': ['djoser.permissions.CurrentUserOrAdmin'],
+        'token_create': ['rest_framework.permissions.AllowAny'],
+        'token_destroy': ['rest_framework.permissions.IsAuthenticated'],
+    }
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),
+    'UNICODE_JSON': True,
+}
+
+
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
-    # "site_title": "Library Admin",
+    "site_title": "Matrix Admin",
 
     # Title on the brand, and login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    # "site_header": "Library",
+    "site_header": "Matrix Admin",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "images/Tanzania.svg.png",
+    "site_logo": "media/Tanzania.svg.png",
 
     # CSS classes that are applied to the logo above
     "site_logo_classes": "img-circle",
@@ -158,7 +266,7 @@ JAZZMIN_SETTINGS = {
     "site_icon": None,
 
     # Welcome text on the login screen
-    # "welcome_sign": "Welcome to the library",
+    "welcome_sign": "Welcome to the Matrix Admin Panel",
 
     # Copyright on the footer
     "copyright": "MatrixHub Company Ltd.",
@@ -278,10 +386,10 @@ JAZZMIN_UI_TWEAKS = {
     "accent": "accent-primary",
     "navbar": "navbar-white navbar-light",
     "no_navbar_border": False,
-    "navbar_fixed": False,
+    "navbar_fixed": True,
     "layout_boxed": False,
-    "footer_fixed": False,
-    "sidebar_fixed": False,
+    "footer_fixed": True,
+    "sidebar_fixed": True,
     "sidebar": "sidebar-dark-primary",
     "sidebar_nav_small_text": True,
     "sidebar_disable_expand": False,
@@ -289,7 +397,7 @@ JAZZMIN_UI_TWEAKS = {
     "sidebar_nav_compact_style": False,
     "sidebar_nav_legacy_style": False,
     "sidebar_nav_flat_style": False,
-    "theme": "morph",
+    "theme": "lumen",
     "dark_mode_theme": None,
     "button_classes": {
         "primary": "btn-outline-primary",

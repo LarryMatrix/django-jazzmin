@@ -6,6 +6,12 @@ name = "pypi"
 [packages]
 django = "*"
 django-jazzmin = "*"
+django-admin = "*"
+djoser = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

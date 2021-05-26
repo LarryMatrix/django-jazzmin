@@ -1,0 +1,5 @@
+
+POST http://localhost:8000/hprs/api/v1/facility/create/
+Authorization: Bearer jdskghgfdsakjfbsadkjhfb
+{
+}

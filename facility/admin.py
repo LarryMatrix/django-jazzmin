@@ -4,5 +4,5 @@ from .models import Facility
 
 @admin.register(Facility)
 class CouncilAdmin(admin.ModelAdmin):
-    list_display = ('Fac_IDNumber', 'Name', 'Comm_FacName', 'Region')
+    list_display = ('Fac_IDNumber', 'name', 'Comm_FacName', 'region')
 
